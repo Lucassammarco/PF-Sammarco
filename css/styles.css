@@ -1,0 +1,296 @@
+:root{
+    --fuente-principal:"fuente primaria",'Overpass', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    font-family: var(--fuente-principal);
+}
+
+.portada{
+    background-image: url(../imagenes/fondo\ inicio.jpeg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 500px;
+    position: relative;
+    text-align: center;
+}
+.portada h1 {
+    margin-top: 30px;
+    color: white;
+    font-size: 48px;
+}
+
+.barra_navegacion {
+    background-color: rgba(255,255,255,0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+    text-decoration: none;
+
+    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+}
+.barra_navegacion ul {
+    display: flex;
+    list-style: none;
+    justify-content: end;
+    text-decoration: none;
+    }
+.barra_navegacion ul li{
+    text-decoration: none;
+    padding: 10px;
+    text-decoration: none;
+}
+.barra_navegacion a{
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+}
+
+.logo{
+    height: 80px;
+    width: 80px;
+}
+
+/*hoja estilos pagina inicio*/
+
+.contenedor{
+    border: solid;  
+    color : black;  
+    border-radius: 20px;
+    max-width: 500px;
+    padding: 10px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+}
+
+.img_contenedor{
+    max-width: 100%;
+    height: auto;
+    border-radius: 20px;
+    
+}
+
+.tarjeta_salida{
+    border: solid;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 300px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 10px;
+}
+.img_tarjeta{
+    max-width: 100%;
+    height: 50%;
+    border-radius: 20px;
+}
+
+.servicios{
+    border: solid;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+}
+.estrella{
+    color: gold;
+}
+
+.footer{
+    background-color: black;
+    color: white;
+    display: flex;
+    
+
+}
+.footer_nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+}
+.footer_nav a{
+    text-decoration: none;
+    color: white;
+    font-family: var(--fuente-principal);
+}
+.footer_nav ul li{
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    text-decoration: white;
+    padding: 5px;
+
+}
+
+.footer img{
+    width: 200px;
+    height: 200px;
+}
+.social{
+    display: flex; 
+    
+}
+/* Fin estilo page inicio*/
+
+/* comienzo hoja de estilo "salidas"*/
+.salidas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+.salida{
+    border: solid;
+    border-radius: 20px;
+    color: black;
+    max-width: 1300px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 10px;  
+
+}
+
+.salida img{
+    width: 100%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+/*fin hoja estilos "salidas"*/
+
+/* inicio hoja estilos guias*/
+
+.guia{
+    border: solid;
+    border-radius: 20px;
+    color: black;
+    width: 1000px;
+    height: 350px;
+    display: flex;
+    margin: 15px;   
+    background-color: #dcdcdc;
+}
+.guia img{
+    width: 80%;
+    margin: 15px;
+    border-radius: 20px;
+    height:150px;
+
+}
+.contenedor_guia1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px ;
+}
+.contenedor_guia1 .estrella{
+    display: flex;
+    gap: 10px;
+    margin-top: 20px; 
+}
+
+.contenedor_guia2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+}
+.select{
+    width: 150px;
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.guia button{
+    background-color: green;
+    color: #fff;
+    padding: 5px;
+    border-radius: 20px;
+}
+.sombra{
+    box-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/*Fin hoja de estilos "Nuestros Guias"*/
+
+/*Inicio hoja de estilos "Señuelos"*/
+
+.senuelo{
+    border: solid;
+    color: black;
+    border-radius: 20px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px;
+}
+.senuelo img{
+    width: 100%;
+    height: 130px;
+    border-radius: 20px;
+    border-bottom: solid 3px black;
+}
+
+.senuelo select{
+    width: 30%;
+    
+}
+.senuelo input{
+    width: 40px;
+}
+.senuelo button{
+    width: 70px;
+    padding: 3px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+/*Fin hoja de estilos Señuelos*/
+
+/*Inicio hoja forulario*/
+
+.formulario{
+    border: solid black ;
+    border-radius: 20px;
+    width: 90%;
+    height: 700px;
+    display: flex;
+    margin: 20px;
+    background-image: linear-gradient(to bottom,#cd966c, #874421) ;
+
+}
+.formulario img{
+    height: 95%;
+    border-radius: 20px;
+    margin: 15px;
+    border: white 2px solid;
+}
+
+.form{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
