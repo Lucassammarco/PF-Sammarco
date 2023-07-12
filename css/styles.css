@@ -26,7 +26,9 @@ html{
     color: white;
     font-size: 48px;
 }
-
+.menu{
+    display: none;
+}
 .barra_navegacion {
     background-color: rgba(255,255,255,0.5);
     display: flex;
@@ -56,6 +58,30 @@ html{
    color: blue;
 }
 
+@media(max-width: 480px){
+     .menu{
+        display: flex;
+        order: -1;
+        margin-left: 15px;
+    }
+    
+    .barra_navegacion ul{
+        position: fixed;
+        left: -500px;
+        background-color: white;  
+        width: 80%;
+        height: 50%;
+        flex-direction: column;
+    }
+    .barra_navegacion .menu:hover + ul {
+        left: 0px;
+    }
+    .barra_navegacion ul:hover{
+        left: 0px;
+    }
+   
+
+}
 .logo{
     height: 80px;
     width: 80px;
@@ -98,6 +124,11 @@ html{
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.8);
     
 }
+@media(max-width: 480px){
+    .img_contenedor{
+        width: 50%;
+    }
+}
 .contenedor_salidas{
     display: flex;
     justify-content: space-around;
@@ -133,6 +164,11 @@ html{
     text-align: center;
     margin: 10px;
     background-color: white;
+}
+@media(max-width: 480px){
+   .tarjeta_salida{
+    height: 250px;
+   }
 }
 .img_tarjeta{
     width: 100%;
@@ -197,6 +233,11 @@ html{
 .footer img{
     width: 200px;
     height: 200px;
+}
+@media(max-width:480px){
+    .footer p{
+        display: none;
+    }
 }
 .social{
     display: flex; 
