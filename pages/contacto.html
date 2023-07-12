@@ -33,21 +33,27 @@
         <div class="formulario sombra">
             <div class="form">
                 <form action="">
-                    <label for="nombre">Nombre:</label>
-                    <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre y Apellido" required>
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email" placeholder="Ingrese direccion Email" required>
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" name="telefono" id="telefono" placeholder="Ingrese Numero telefonico" required>
-                    <label for="mensaje">Dejanos tu mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese mensaje"></textarea>
+                    <div class=" data form_nombre">
+                        <label for="nombre">Nombre :</label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+                        <label for="apellido">Apellido :</label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ingrese Apellido" required>
+                    </div>
+                    <div class=" data form_datos">
+                        <label for="email">Email :</label>
+                        <input type="email" name="email" id="email" placeholder="Ingrese direccion Email" required>
+                        <label for="telefono">Telefono :</label>
+                        <input type="tel" name="telefono" id="telefono" placeholder="Ingrese Numero telefonico" required>
+                    </div>
+                    <div class=" data form_mensaje">
+                        <label for="mensaje">Dejanos tu mensaje : </label>
+                        <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Ingrese mensaje"></textarea>
+                    </div>
                     <button type="submit">Enviar</button>
                 </form>
             </div>
             <div >
                 <img src="../imagenes/formulario contacto.jpeg" alt="imagen contacto"> 
-                
-        
             </div>
         </div>
     </main>

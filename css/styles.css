@@ -5,10 +5,12 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 html{
     font-family: var(--fuente-principal);
 }
+
 
 .portada{
     background-image: url(../imagenes/fondo\ inicio.jpeg);
@@ -32,8 +34,7 @@ html{
     align-items: center;
     font-size: 20px;
     text-decoration: none;
-
-    /*font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    
 }
 .barra_navegacion ul {
     display: flex;
@@ -43,13 +44,16 @@ html{
     }
 .barra_navegacion ul li{
     text-decoration: none;
-    padding: 10px;
+    padding:10px;
     text-decoration: none;
 }
 .barra_navegacion a{
     text-decoration: none;
     color: black;
     font-weight: 700;
+}
+.barra_navegacion a:hover{
+   color: blue;
 }
 
 .logo{
@@ -59,24 +63,61 @@ html{
 
 /*hoja estilos pagina inicio*/
 
-.contenedor{
-    border: solid;  
-    color : black;  
+
+.contenedor_salidas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    max-width: 100%;
+
+}
+
+.contenedor{ 
     border-radius: 20px;
-    max-width: 500px;
+    max-width: 100%;
     padding: 10px;
     margin: 15px;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    align-items: center;
     text-align: center;
+    background-image: url(../imagenes/fondo\ 1.jpeg);
+    background-size: cover;
+    
 }
-
+.contenedor h2{
+    font-size: 32px;
+}
 .img_contenedor{
-    max-width: 100%;
+   
     height: auto;
     border-radius: 20px;
+    width: 700px;   
+    margin-bottom: 10px;
+    box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.8);
     
+}
+.contenedor_salidas{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    align-items: center;
+    margin: 20px 0;
+
+}
+.salidas{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 20px 0;
+    background-image: url(../imagenes/textura\ 1.png);
+    background-size: cover;
+
+    
+}
+.salidas h2{
+    font-size: 32px;
 }
 
 .tarjeta_salida{
@@ -84,27 +125,43 @@ html{
     color: black;
     padding: 10px;
     border-radius: 20px;
-    max-width: 300px;
-    height: 300px;
+    width: 300px;
+    height: 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     text-align: center;
     margin: 10px;
+    background-color: white;
 }
 .img_tarjeta{
-    max-width: 100%;
+    width: 100%;
     height: 50%;
     border-radius: 20px;
 }
 
 .servicios{
-    border: solid;
-    color: black;
+    padding: 10px;
     display: flex;
     justify-content: space-around;
     border-radius: 20px;
+    margin: 20px;
+    align-items: center;
 }
+.servicios_indi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+.contenedor_guias {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 15px 0;
+    
+}
+
 .estrella{
     color: gold;
 }
@@ -134,24 +191,36 @@ html{
     padding: 5px;
 
 }
-
+.footer_nav a:hover{
+    color: blue;
+}
 .footer img{
     width: 200px;
     height: 200px;
 }
 .social{
     display: flex; 
-    
+    align-self: flex-end;
+    padding-bottom: 10px;
 }
+
 /* Fin estilo page inicio*/
 
 /* comienzo hoja de estilo "salidas"*/
-.salidas{
+
+.cont_salidas{
     display: flex;
     flex-direction: column;
     text-align: center;
-    justify-content: center;
+    padding: 15px;
+    background-image: url(../imagenes/textura\ 1.png);
+    background-size: cover;
+    align-items: center ;
 }
+.cont_salidas h2{
+    font-size: 32px;
+}
+
 .salida{
     border: solid;
     border-radius: 20px;
@@ -159,23 +228,36 @@ html{
     max-width: 1300px;
     height: 600px;
     display: flex;
-    align-items: center;
-    text-align: center;
+    flex-direction: column;
     margin: 10px;  
-
+    background-color:#fff;
+   
+}
+.contenido{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    
 }
 
 .salida img{
-    width: 100%;
+    width: 60%;
     height: 80%;
-    padding: 10px;
     border-radius: 20px;
+    border: solid 1px black;
 }
 
 /*fin hoja estilos "salidas"*/
 
 /* inicio hoja estilos guias*/
+ .guias{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+
+ }
 .guia{
     border: solid;
     border-radius: 20px;
@@ -232,6 +314,11 @@ html{
 
 /*Inicio hoja de estilos "Señuelos"*/
 
+.senuelos{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    background-image: linear-gradient(to bottom,#cd966c, #874421) ;
+}
 .senuelo{
     border: solid;
     color: black;
@@ -241,6 +328,7 @@ html{
     flex-direction: column;
     text-align: center;
     margin: 20px;
+    background-color: white;
 }
 .senuelo img{
     width: 100%;
@@ -266,11 +354,13 @@ html{
     margin: 10px;
 }
 
+
 /*Fin hoja de estilos Señuelos*/
 
 /*Inicio hoja forulario*/
 
 .formulario{
+    font-size: 22px;
     border: solid black ;
     border-radius: 20px;
     width: 90%;
@@ -292,5 +382,31 @@ html{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding: 15px;
+    gap:10px
     
+}
+.form button{
+    width: 90px;
+    height: 25px;
+    border-radius: 5px;
+}
+.form button:hover{
+    background-color: green;
+    color: white;
+}
+.data{
+    display: flex;
+    flex-direction: column;
+}
+.data input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px white;
+    font-size: 22px ;
+    color: white;
+}
+
+.data input:hover{
+    background-color: rgb(201, 174, 174);
 }
