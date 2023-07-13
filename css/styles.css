@@ -451,7 +451,35 @@ html{
     border-radius: 20px;
     margin: 10px;
 }
+@media(max-width: 480px){
+    .senuelos{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .senuelo{
+        width: 85%;
+        height: 400px;
+        justify-content: space-between;
+    }
+    .senuelo button{
+        width: 90px;
+        padding: 5px;
+    }
+}
 
+@media(max-width: 768px){
+    .senuelos{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+
+    }
+    .senuelo{
+        width: 70%;
+        height: 350px;
+        justify-content: space-between;
+    }
+}
 
 /*Fin hoja de estilos Señuelos*/
 
@@ -464,19 +492,21 @@ html{
     width: 90%;
     height: 700px;
     display: flex;
+    justify-items: center;
     margin: 20px;
     background-image: linear-gradient(to bottom,#cd966c, #874421) ;
 
 }
 .formulario img{
     height: 95%;
+    width: 90%;
     border-radius: 20px;
     margin: 15px;
     border: white 2px solid;
 }
 
 .form{
-    width: 90%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -507,4 +537,21 @@ html{
 
 .data input:hover{
     background-color: rgb(201, 174, 174);
+}
+
+@media(max-width: 480px){
+    .form button{
+        margin-top: 10px;
+    }
+    .imagen__formulario{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .formulario{
+        height: 500px;
+    }
+    .imagen__formulario{
+        width: 100%;
+    }
 }
