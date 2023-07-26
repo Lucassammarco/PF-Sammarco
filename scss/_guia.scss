@@ -1,0 +1,24 @@
+.guia{
+    border: solid;
+    border-radius: 20px;
+    color: black;
+    width: 60%;
+    height: 350px;
+    display: flex;
+    margin: 15px;   
+    background-color: #dcdcdc;
+        img{
+            width: 80%;
+            margin: 15px;
+            border-radius: 20px;
+            height:150px;
+        
+        }
+        button{
+            background-color: green;
+            color: #fff;
+            padding: 5px;
+            border-radius: 20px;
+        }
+    
+}

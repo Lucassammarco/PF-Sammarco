@@ -1,0 +1,36 @@
+.salida{
+    border: solid;
+    border-radius: 20px;
+    color: black;
+    max-width: 1300px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;  
+    background-color:#fff;
+        img{
+            width: 60%;
+            height: 80%;
+            border-radius: 20px;
+            border: solid 1px black;
+        }
+   
+}
+@media(max-width: 480px){
+    .salida{
+        height: 60%;
+        img{
+            width: 100%;
+        }
+    }
+    .contenido{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+ }
+ @media(max-width: 768px){
+    .salida{
+     height: 80%;
+    }
+ }

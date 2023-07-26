@@ -1,0 +1,23 @@
+
+@media(max-width: 480px){
+    .guia{
+        width:95%;
+    }
+    
+   .select{
+    display:flex;
+    justify-content: space-between;
+   }
+   .selec__media{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 5px;
+   }
+
+ }
+ @media(max-width: 768px){
+    .guia{
+        width: 95%;
+    }
+ }

@@ -1,0 +1,14 @@
+.servicios{
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 20px;
+    margin: 20px;
+    align-items: center;
+}
+.servicios_indi{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
