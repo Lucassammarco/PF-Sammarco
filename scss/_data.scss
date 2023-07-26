@@ -1,0 +1,14 @@
+.data{
+    display: flex;
+    flex-direction: column;
+        input{
+            background-color: transparent;
+            border: none;
+            border-bottom: 2px white;
+            font-size: 22px ;
+            color: white;
+            &:hover{
+                background-color: rgb(201, 174, 174);
+            }
+        }
+}

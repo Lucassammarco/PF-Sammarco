@@ -467,7 +467,6 @@ html {
   margin: 20px;
   background-image: linear-gradient(to bottom, #cd966c, #874421);
 }
-
 .formulario img {
   height: 95%;
   width: 90%;
@@ -484,13 +483,11 @@ html {
   padding: 15px;
   gap: 10px;
 }
-
 .form button {
   width: 90px;
   height: 25px;
   border-radius: 5px;
 }
-
 .form button:hover {
   background-color: green;
   color: white;
@@ -500,7 +497,6 @@ html {
   display: flex;
   flex-direction: column;
 }
-
 .data input {
   background-color: transparent;
   border: none;
@@ -508,7 +504,6 @@ html {
   font-size: 22px;
   color: white;
 }
-
 .data input:hover {
   background-color: rgb(201, 174, 174);
 }
@@ -529,5 +524,6 @@ html {
     width: 100%;
   }
 }
+/*fin estilos formulario*/
 
 /*# sourceMappingURL=styles.css.map */

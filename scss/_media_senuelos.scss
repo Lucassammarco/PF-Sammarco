@@ -1,0 +1,29 @@
+@media(max-width: 480px){
+    .senuelos{ 
+        display: flex;
+        flex-direction: column;
+        align-items: center;  
+    }
+    .senuelo{
+        width: 85%;
+        height: 400px;
+        justify-content: space-between;
+    }
+    .senuelo button{
+        width: 90px;
+        padding: 5px;
+    }
+}
+
+@media(max-width: 768px){
+    .senuelos{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+
+    }
+    .senuelo{
+        width: 70%;
+        height: 350px;
+        justify-content: space-between;
+    }
+}

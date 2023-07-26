@@ -1,0 +1,16 @@
+@media(max-width: 480px){
+    .form button{
+        margin-top: 10px;
+    }
+    .imagen__formulario{
+        display: none;
+    }
+}
+@media(max-width: 768px){
+    .formulario{
+        height: 500px;
+    }
+    .imagen__formulario{
+        width: 100%;
+    }
+}

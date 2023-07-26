@@ -1,0 +1,19 @@
+.formulario{
+    font-size: 22px;
+    border: solid black ;
+    border-radius: 20px;
+    width: 90%;
+    height: 700px;
+    display: flex;
+    justify-items: center;
+    margin: 20px;
+    background-image: linear-gradient(to bottom,#cd966c, #874421) ;
+        img{
+            height: 95%;
+            width: 90%;
+            border-radius: 20px;
+            margin: 15px;
+            border: white 2px solid;
+        }
+
+}
