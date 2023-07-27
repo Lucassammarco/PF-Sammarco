@@ -1,3 +1,28 @@
+@media(max-width: 1024px){
+    .senuelos{
+        grid-template-columns: repeat(4,1fr);
+        justify-items: center;
+
+    }
+    .senuelo{
+        width: 90%;
+        height: 350px;
+        justify-content: space-between;
+    }
+}
+@media(max-width: 768px){
+    .senuelos{
+        grid-template-columns: repeat(2,1fr);
+        justify-items: center;
+
+    }
+    .senuelo{
+        width: 70%;
+        height: 350px;
+        justify-content: space-between;
+    }
+}
+
 @media(max-width: 480px){
     .senuelos{ 
         display: flex;
@@ -15,15 +40,3 @@
     }
 }
 
-@media(max-width: 768px){
-    .senuelos{
-        grid-template-columns: repeat(2,1fr);
-        justify-items: center;
-
-    }
-    .senuelo{
-        width: 70%;
-        height: 350px;
-        justify-content: space-between;
-    }
-}

@@ -89,9 +89,11 @@ html {
   text-decoration: none;
   color: white;
   font-family: var(--fuente-principal);
+  transition: transform 0.3s ease;
 }
 .footer_nav ul li a:hover {
   color: blue;
+  transform: scale(1.2);
 }
 
 @media (max-width: 480px) {
@@ -124,6 +126,7 @@ html {
   margin-top: 30px;
   color: white;
   font-size: 48px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .contenedor {
@@ -184,6 +187,14 @@ html {
   font-size: 32px;
 }
 
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  } /* Estado inicial del div */
+  100% {
+    transform: scale(1.3);
+  } /* Estado final del div, con un escalamiento del 110% */
+}
 .tarjeta_salida {
   border: solid;
   color: black;
@@ -197,6 +208,10 @@ html {
   text-align: center;
   margin: 10px;
   background-color: white;
+  transition: transform 0.1s ease;
+}
+.tarjeta_salida a:hover {
+  animation: zoomInOut 1s infinite alternate;
 }
 
 @media (max-width: 768px) {
@@ -408,12 +423,17 @@ html {
   text-align: center;
   margin: 20px;
   background-color: white;
+  transition: transform 0.3s ease;
 }
 .senuelo img {
   width: 100%;
   height: 130px;
   border-radius: 20px;
   border-bottom: solid 3px black;
+  transition: transform 0.3s ease;
+}
+.senuelo img:hover {
+  transform: scale(1.5);
 }
 .senuelo select {
   width: 30%;
@@ -429,8 +449,37 @@ html {
   border: none;
   border-radius: 20px;
   margin: 10px;
+  transition: transform 0.3s ease;
+}
+.senuelo button:hover {
+  transform: scale(1.1);
+}
+.senuelo:hover {
+  transform: scale(1.1);
 }
 
+@media (max-width: 1024px) {
+  .senuelos {
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+  }
+  .senuelo {
+    width: 90%;
+    height: 350px;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .senuelos {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+  .senuelo {
+    width: 70%;
+    height: 350px;
+    justify-content: space-between;
+  }
+}
 @media (max-width: 480px) {
   .senuelos {
     display: flex;
@@ -447,19 +496,13 @@ html {
     padding: 5px;
   }
 }
-@media (max-width: 768px) {
-  .senuelos {
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-  }
-  .senuelo {
-    width: 70%;
-    height: 350px;
-    justify-content: space-between;
-  }
-}
 /*Fin hoja de estilos Señuelos*/
 /*Inicio hoja forulario*/
+.contenedor_formulario {
+  display: flex;
+  justify-content: center;
+}
+
 .formulario {
   font-size: 22px;
   border: solid black;

@@ -10,12 +10,12 @@
             list-style: none;
             justify-content: end;
             text-decoration: none;
-
+            
                 a {
                      padding:10px;
                      text-decoration: none;
                      color: black;
-                     font-weight: 700;
+                     font-weight: 700; 
                         &:hover{
                             color:  blue;
                         }

@@ -3,6 +3,7 @@
 }
 
 @import "reset";
+@import "constantes";
 @import "barra_navegacion";
 @import "footer";
 @import "logo";
@@ -38,6 +39,7 @@
 /*Fin hoja de estilos Señuelos*/
 
 /*Inicio hoja forulario*/
+@import "contenedor_formulario";
 @import "formulario";
 @import "form";
 @import "data";
