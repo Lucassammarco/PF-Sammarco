@@ -20,6 +20,7 @@
         width: 70%;
         height: 350px;
         justify-content: space-between;
+        
     }
 }
 
@@ -33,6 +34,14 @@
         width: 85%;
         height: 400px;
         justify-content: space-between;
+        &:hover{
+            transform: scale(1.15);
+        }
+       img{
+        &:hover{
+            transform: none;
+        }
+       }
     }
     .senuelo button{
         width: 90px;

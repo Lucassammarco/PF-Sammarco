@@ -1,0 +1,26 @@
+@media(max-width: 600px){
+    .menu{
+       display: flex;
+       order: -1;
+       margin-left: 15px;
+   }
+   
+   .barra_navegacion ul{
+       position: fixed;
+       left: -500px;
+       background-color: white;  
+       width: 80%;
+       height: 50%;
+       flex-direction: column;
+       gap: 10px;
+       
+   }
+   .barra_navegacion .menu:hover + ul {
+       left: 0px;
+   }
+   .barra_navegacion ul:hover{
+       left: 0px;
+   }
+  
+
+}

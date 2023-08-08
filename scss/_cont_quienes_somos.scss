@@ -25,11 +25,15 @@
     width: 700px;   
     margin-bottom: 10px;
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.8);
+    object-fit: cover;
 }
 
 @media(max-width: 480px){
     .img_contenedor{
         width: 50%;
+    }
+    .contenedor{
+        font-size: 18px;
     }
 }
 @media(max-width: 768px){

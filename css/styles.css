@@ -1,8 +1,4 @@
 @charset "UTF-8";
-:root {
-  --fuente-principal:"fuente primaria","Overpass", sans-serif;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +7,10 @@
 
 html {
   font-family: var(--fuente-principal);
+}
+
+:root {
+  --fuente-principal:"fuente primaria","Overpass", sans-serif;
 }
 
 .barra_navegacion {
@@ -41,7 +41,7 @@ html {
   display: none;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 600px) {
   .menu {
     display: flex;
     order: -1;
@@ -155,11 +155,15 @@ html {
   width: 700px;
   margin-bottom: 10px;
   box-shadow: 4px 4px 4px 4px rgba(0, 0, 0, 0.8);
+  object-fit: cover;
 }
 
 @media (max-width: 480px) {
   .img_contenedor {
     width: 50%;
+  }
+  .contenedor {
+    font-size: 18px;
   }
 }
 @media (max-width: 768px) {
@@ -190,10 +194,10 @@ html {
 @keyframes zoomInOut {
   0% {
     transform: scale(1);
-  } /* Estado inicial del div */
+  }
   100% {
     transform: scale(1.3);
-  } /* Estado final del div, con un escalamiento del 110% */
+  }
 }
 .tarjeta_salida {
   border: solid;
@@ -286,6 +290,7 @@ html {
 .salida img {
   width: 60%;
   height: 80%;
+  object-fit: cover;
   border-radius: 20px;
   border: solid 1px black;
 }
@@ -297,14 +302,17 @@ html {
   .salida img {
     width: 100%;
   }
-  .contenido {
-    flex-direction: column;
-    gap: 10px;
-  }
 }
 @media (max-width: 768px) {
   .salida {
     height: 80%;
+  }
+  .salida img {
+    width: 100%;
+  }
+  .contenido {
+    flex-direction: column;
+    gap: 10px;
   }
 }
 .contenido {
@@ -313,6 +321,10 @@ html {
   align-items: center;
   padding: 15px;
   gap: 15px;
+}
+
+.info_salidas {
+  text-align: start;
 }
 
 /*fin estilos pagina salidas*/
@@ -338,6 +350,7 @@ html {
   margin: 15px;
   border-radius: 20px;
   height: 150px;
+  object-fit: cover;
 }
 .guia button {
   background-color: green;
@@ -418,15 +431,17 @@ html {
   color: black;
   border-radius: 20px;
   width: 230px;
+  margin: 20px;
+  position: relative;
   display: flex;
   flex-direction: column;
   text-align: center;
-  margin: 20px;
   background-color: white;
   transition: transform 0.3s ease;
 }
 .senuelo img {
   width: 100%;
+  padding: 0px;
   height: 130px;
   border-radius: 20px;
   border-bottom: solid 3px black;
@@ -490,6 +505,12 @@ html {
     width: 85%;
     height: 400px;
     justify-content: space-between;
+  }
+  .senuelo:hover {
+    transform: scale(1.15);
+  }
+  .senuelo img:hover {
+    transform: none;
   }
   .senuelo button {
     width: 90px;

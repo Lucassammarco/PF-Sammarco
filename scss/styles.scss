@@ -1,11 +1,11 @@
-:root{
-    --fuente-principal:"fuente primaria",'Overpass', sans-serif;
-}
+
 
 @import "reset";
 @import "constantes";
 @import "barra_navegacion";
+@import "media_barra_navegacion";
 @import "footer";
+@import "media_footer";
 @import "logo";
 @import "social";
 
