@@ -2,22 +2,33 @@
 @media(max-width: 480px){
     .guia{
         width:95%;
-    }
-    
-   .select{
-    display:flex;
-    justify-content: space-between;
-   }
-   .selec__media{
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    gap: 5px;
-   }
+    }   
 
+ }
+
+ @media(max-width: 600px){
+    .guia{
+        width: 70%;
+    }
+    .select{
+        display:flex;
+        justify-content: space-between;
+       }
+       .selec__media{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 5px;
+       }
  }
  /*media query pagina guias para dispositivos tablets*/
  @media(max-width: 768px){
+    .guia{
+        width: 85%;
+    }
+ }
+
+ @media(max-width: 1024px){
     .guia{
         width: 95%;
     }
