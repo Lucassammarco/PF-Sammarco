@@ -1,3 +1,4 @@
+/*media query del formulario para dispositivos moviles */
 @media(max-width: 480px){
     .form button{
         margin-top: 10px;
@@ -6,6 +7,7 @@
         display: none;
     }
 }
+/*media query del formulario para tablets */
 @media(max-width: 768px){
     .formulario{
         height: 500px;

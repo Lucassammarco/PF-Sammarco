@@ -27,7 +27,7 @@
     box-shadow: 4px 4px 4px 4px rgba(0,0,0,0.8);
     object-fit: cover;
 }
-
+/*media query para dispostivimos moviles*/
 @media(max-width: 480px){
     .img_contenedor{
         width: 50%;
@@ -36,6 +36,7 @@
         font-size: 18px;
     }
 }
+/*media query para tablets*/
 @media(max-width: 768px){
     .img_contenedor{
         width: 70%;

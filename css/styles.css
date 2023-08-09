@@ -41,6 +41,7 @@ html {
   display: none;
 }
 
+/*media query para hacer el menu hamburgueza en dispositivos moviles*/
 @media (max-width: 600px) {
   .menu {
     display: flex;
@@ -96,7 +97,8 @@ html {
   transform: scale(1.2);
 }
 
-@media (max-width: 480px) {
+/*media query footer dispositivos moviles*/
+@media (max-width: 600px) {
   .footer p {
     display: none;
   }
@@ -158,6 +160,7 @@ html {
   object-fit: cover;
 }
 
+/*media query para dispostivimos moviles*/
 @media (max-width: 480px) {
   .img_contenedor {
     width: 50%;
@@ -166,6 +169,7 @@ html {
     font-size: 18px;
   }
 }
+/*media query para tablets*/
 @media (max-width: 768px) {
   .img_contenedor {
     width: 70%;
@@ -218,14 +222,16 @@ html {
   animation: zoomInOut 1s infinite alternate;
 }
 
-@media (max-width: 768px) {
-  .tarjeta_salida {
-    height: 250px;
-  }
-}
+/*media query para dispostivimos moviles*/
 @media (max-width: 480px) {
   .tarjeta_salida {
     height: 200px;
+  }
+}
+/*media query para tablets*/
+@media (max-width: 768px) {
+  .tarjeta_salida {
+    height: 250px;
   }
 }
 .img_tarjeta {
@@ -295,26 +301,6 @@ html {
   border: solid 1px black;
 }
 
-@media (max-width: 480px) {
-  .salida {
-    height: 60%;
-  }
-  .salida img {
-    width: 100%;
-  }
-}
-@media (max-width: 768px) {
-  .salida {
-    height: 80%;
-  }
-  .salida img {
-    width: 100%;
-  }
-  .contenido {
-    flex-direction: column;
-    gap: 10px;
-  }
-}
 .contenido {
   display: flex;
   justify-content: center;
@@ -327,6 +313,28 @@ html {
   text-align: start;
 }
 
+/*media query pagina de salidas para dispositivos moviles*/
+@media (max-width: 480px) {
+  .salida {
+    height: 60%;
+  }
+  .salida img {
+    width: 100%;
+  }
+}
+/*media query pagina de salidas para tablets*/
+@media (max-width: 768px) {
+  .salida {
+    height: 80%;
+  }
+  .salida img {
+    width: 100%;
+  }
+  .contenido {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
 /*fin estilos pagina salidas*/
 /*inicio estilos pagina "guias"*/
 .guias {
@@ -398,6 +406,7 @@ html {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
 }
 
+/*media query pagina guias para dispositivos moviles*/
 @media (max-width: 480px) {
   .guia {
     width: 95%;
@@ -413,6 +422,7 @@ html {
     gap: 5px;
   }
 }
+/*media query pagina guias para dispositivos tablets*/
 @media (max-width: 768px) {
   .guia {
     width: 95%;
@@ -473,7 +483,7 @@ html {
   transform: scale(1.1);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1330px) {
   .senuelos {
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -484,6 +494,19 @@ html {
     justify-content: space-between;
   }
 }
+/*media query pagina señuelos*/
+@media (max-width: 1024px) {
+  .senuelos {
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .senuelo {
+    width: 90%;
+    height: 350px;
+    justify-content: space-between;
+  }
+}
+/*media query pagina señuelos para dispostivimos tablet*/
 @media (max-width: 768px) {
   .senuelos {
     grid-template-columns: repeat(2, 1fr);
@@ -495,6 +518,7 @@ html {
     justify-content: space-between;
   }
 }
+/*media query pagina señuelos para dispostivimos moviles*/
 @media (max-width: 480px) {
   .senuelos {
     display: flex;
@@ -576,6 +600,7 @@ html {
   background-color: rgb(201, 174, 174);
 }
 
+/*media query del formulario para dispositivos moviles */
 @media (max-width: 480px) {
   .form button {
     margin-top: 10px;
@@ -584,6 +609,7 @@ html {
     display: none;
   }
 }
+/*media query del formulario para tablets */
 @media (max-width: 768px) {
   .formulario {
     height: 500px;
